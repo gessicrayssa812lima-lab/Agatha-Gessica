@@ -1,0 +1,313 @@
+/* CONFIGURAÇÕES GERAIS DA PÁGINA */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    scroll-behavior: smooth;
+
+    /* FUNDO EM DEGRADÊ SUAVE (Roxo e Rosa pastel se misturando) */
+    background: linear-gradient(135deg, #f5f0ff 0%, #fff0f5 100%);
+    background-attachment: fixed;
+}
+
+/* DESIGN DO TOPO */
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    border-bottom: 3px solid #6f42c1;
+    position: relative;
+    text-align: center;
+    /* Alinha a acessibilidade no topo e o resto embaixo */
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+/* BARRA DE ACESSIBILIDADE NO CANTO DIREITO SUPERIOR */
+.barra-acessibilidade {
+    display: flex;
+    justify-content: flex-end; /* Empurra tudo para a direita */
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 1200px; /* Alinha com as extremidades do site */
+    margin-bottom: 10px;
+}
+
+.item-acessibilidade {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.icone-libras {
+    width: 24px;
+    height: 24px;
+}
+
+.botoes-fonte {
+    display: flex;
+    gap: 5px;
+}
+
+.botoes-fonte button {
+    background: #e0e0e0;
+    border: 1px solid #999;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.botoes-fonte button:hover {
+    background: #ccc;
+}
+/* BOTÕES E FOTOS DE NAVEGAÇÃO CENTRALIZADOS */
+.menu-navegacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 25px;
+}
+
+.menu-titulo {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.menu-item-dupla {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px; 
+}
+
+.btn-link {
+    display: inline-block;
+    background-color: #6f42c1;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.btn-link:hover {
+    background-color: #5a32a3;
+}
+
+/* Estilo das Fotos Circulares do Menu */
+.foto-menu {
+    width: 130px;
+    height: 130px;
+    object-fit: cover; 
+    border-radius: 50%; 
+    border: 4px solid #6f42c1; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    background-color: #eee;
+}
+
+/* GRUPO DIVIDIDO AO MEIO (50% / 50%) */
+.container-dupla {
+    display: flex;
+    width: 100%;
+}
+
+.coluna-perfil {
+    flex: 1;
+    padding: 40px 25px;
+    box-sizing: border-box;
+}
+
+.perfil-agatha {
+    background-color: #fff0f5; /* Mantém o fundo rosa suave na coluna da Agatha */
+    border-right: 2px solid #e1d5eb;
+}
+
+
+.perfil-gessica {
+    background-color: #f5f0ff; /* Roxo suave na direita */
+}
+
+.coluna-perfil h2 {
+    text-align: center;
+    color: #6f42c1;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+/* CAIXA DE INTRODUÇÃO FIXA */
+.caixa-sobre {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e1d5eb;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.caixa-sobre h3 {
+    margin-top: 0;
+    border-bottom: 2px solid #e83e8c;
+    padding-bottom: 5px;
+    color: #e83e8c;
+}
+
+/* EFEITO ABRE E FECHA (SANFONA) */
+details {
+    background: #ffffff;
+    margin-bottom: 20px;
+    border: 1px solid #e1d5eb;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    overflow: hidden;
+}
+
+details[open] {
+    background: #fafafa;
+}
+
+summary {
+    padding: 20px;
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    border-bottom: 2px solid #6f42c1;
+}
+
+summary:hover {
+    background-color: #f3effa;
+}
+
+.conteudo-escondido {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+/* LISTAS DE HOBBIES INTERNAS */
+.conteudo-escondido ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.conteudo-escondido li {
+    margin-bottom: 8px;
+}
+
+/* DESIGN DA SEÇÃO DA PROMEC */
+.secao-promec {
+    max-width: 900px;
+    margin: 40px auto 10px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.secao-promec h2 {
+    color: #6f42c1;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.caixa-promec {
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid #e1d5eb;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(111, 66, 193, 0.02);
+}
+
+.caixa-promec p {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.container-foto-turma {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.foto-turma {
+    width: 100%;
+    max-width: 650px; 
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid #6f42c1; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.legenda-foto {
+    font-size: 0.95rem;
+    color: #6f42c1;
+    font-weight: bold;
+    margin-top: 8px 
+}
+
+/* DESIGN DA SEÇÃO DE AGRADECIMENTO ESPECIAL */
+.secao-agradecimento {
+    max-width: 900px;
+    margin: 40px auto 20px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.secao-agradecimento h2 {
+    color: #6f42c1;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.caixa-agradecimento {
+    background-color: #ffffff;
+    padding: 25px 35px;
+    border: 2px dashed #e83e8c;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(111, 66, 193, 0.05);
+}
+
+.caixa-agradecimento p {
+    font-size: 1.1rem;
+    color: #444;
+    margin: 10px 0;
+    line-height: 1.7;
+}
+
+.lista-homenageados {
+    text-align: left;
+    display: inline-block;
+    margin: 15px auto;
+}
+
+.lista-homenageados ul {
+    margin: 5px 0 0 20px;
+    padding: 0;
+    color: #5a32a3;
+    font-weight: bold;
+}
+
+/* RODAPÉ DO SITE */
+footer {
+    background-color: #2a1b4e;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
